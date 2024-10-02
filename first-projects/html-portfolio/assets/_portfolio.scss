@@ -1,0 +1,92 @@
+.portfolio {
+  width: 100%;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+
+  > h2 {
+    font-size: 50px;
+    text-align: center;
+    color: $white-primary;
+    margin: 40px 0 20px 0;
+  }
+
+  > h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: $white-secondary;
+  }
+
+  &--container {
+    gap: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+
+    .project {
+      width: 450px;
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: $button-box-shadow;
+
+      &--details {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        bottom: -160px;
+        position: absolute;
+        transition: all 0.3s;
+        background-color: $blue-dark;
+
+        > h4 {
+          font-size: 20px;
+          color: $white-primary;
+        }
+
+        > h5 {
+          font-size: 13px;
+          margin: 10px 0 20px 0;
+          color: $white-secondary;
+        }
+
+        > p {
+          font-size: 15px;
+          margin-bottom: 20px;
+          color: $white-secondary;
+        }
+
+        > a {
+          width: 40px;
+          height: 40px;
+          text-decoration: none;
+          > i {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            border-radius: 50%;
+            align-items: center;
+            color: $white-primary;
+            background-color: $red;
+            justify-content: center;
+          }
+        }
+      }
+
+      &:hover {
+        .project--details {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

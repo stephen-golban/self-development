@@ -1,0 +1,17 @@
+/*loader styling starts*/
+.loader__body{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    z-index: 5;
+    background-color: #17315A;
+  }
+  .loader__body > img{
+    width: 100px;
+    display: flex;
+    align-items: center;
+  }
+/*loader styling ends*/

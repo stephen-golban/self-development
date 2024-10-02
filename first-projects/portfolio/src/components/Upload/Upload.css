@@ -1,0 +1,101 @@
+.upload > .MuiPaper-root {
+    width: 650px;
+    height: 450px;
+}
+.upload > .MuiPaper-root > form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.upload > .MuiPaper-root > form > .first__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+}
+.upload > .MuiPaper-root > form > .first__row > a {
+    position: absolute;
+    color: #3F51B5;
+    left: 0;
+}
+.upload > .MuiPaper-root > form > .first__row > h1 {
+    margin: 0;
+    padding: 0;
+    color: #3F51B5;
+}
+.upload > .MuiPaper-root > form > input {
+    margin: 8px 0;
+}
+#root > div > div > form > div:nth-child(3){
+    margin: 5px 0;
+}
+
+.upload > .success__message {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(2px 2px 2px gray);
+    border-radius: 5px;
+    width: 200px;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    visibility: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.success__active {
+    animation: slideUpp 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes slideUpp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.success__inactive {
+    animation: slideDownn 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideDownn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+   
+    }
+}
+@media screen and (max-width: 630px) {
+    .upload {
+        width: 95%;
+        height: auto;
+        padding: 30px 0;
+        margin: auto;
+    }
+    .upload > .MuiPaper-root {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .upload > .MuiPaper-root > form {
+        padding: 20px;
+        width: 100%;
+    }
+    .upload > .MuiPaper-root > form > .first__row > h1 {
+        font-size: 20px;
+    }
+    .upload > .MuiPaper-root > form > .MuiFormControl-root {
+        width: 100% !important;
+    }
+}

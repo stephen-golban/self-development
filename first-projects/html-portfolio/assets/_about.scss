@@ -1,0 +1,114 @@
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  > img {
+    width: 600px;
+    border-radius: 10px;
+
+    @media (max-width: 1500px) {
+      width: 400px;
+    }
+    @media (max-width: 1300px) {
+      width: 300px;
+    }
+  }
+
+  > .text {
+    margin-left: 50px;
+    @media (max-width: 1500px) {
+      margin-left: 40px;
+    }
+    @media (max-width: 1300px) {
+      margin-left: 30px;
+    }
+
+    > h1 {
+      font-size: 57px;
+      color: $white-primary;
+
+      @media (max-width: 1500px) {
+        font-size: 47px;
+      }
+      @media (max-width: 1300px) {
+        font-size: 40px;
+      }
+    }
+
+    > .summary {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      color: $white-secondary;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .skills-row {
+      margin: 2% 0 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      .first-item,
+      .second-item,
+      .third-item {
+        cursor: pointer;
+        margin: 0 5% 0 0;
+        h2 {
+          color: #fffffe;
+          font-size: 22px;
+          font-family: "Montserrat", sans-serif;
+          border: none;
+          outline: none;
+        }
+      }
+      .first-div {
+        transition: width 0.3s;
+        width: 50%;
+        height: 3px;
+        background-color: #fffffe;
+        border: none;
+        outline: none;
+      }
+      .second-div {
+        transition: width 0.3s;
+        width: 50%;
+        height: 3px;
+        background-color: #fffffe;
+        border: none;
+        outline: none;
+      }
+      .third-div {
+        transition: width 0.3s;
+        width: 50%;
+        height: 3px;
+        background-color: #fffffe;
+        border: none;
+        outline: none;
+      }
+    }
+    .skill-content1,
+    .skill-content2,
+    .skill-content3 {
+      display: none;
+      margin: 3% 0 0 0;
+      h3 {
+        color: #e6f1ff;
+        font: 20px "Open Sans", sans-serif;
+        margin: 2% 0 0 0;
+      }
+      p {
+        font: 17px "Open Sans", sans-serif;
+        color: #d6d9e0;
+        padding: 1% 0 0 0;
+      }
+    }
+  }
+}

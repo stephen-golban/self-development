@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body { 
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  color: white;
+}
+.logo h1{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    display: flex;
+    align-items: center;
+}
+.logo h1 span{
+    color: white;
+    margin: 0 10px;
+}
+
+/* COLECTED DATA STYLING *****************************************************************/
+
+.temperature-case{
+  margin: 7% 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.temperature-case h1{
+    font-size: 60px;
+}
+.location-data{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location-data p{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+/*forecast*/
+.forecast-row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 0 0;
+  flex-wrap: wrap;
+}
+.day-box1 ,.day-box2, .day-box3, .day-box4, .day-box5{
+  width: 130px;
+  padding: 10px 0 2% 1%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+.day-box1:hover,.day-box2:hover,.day-box3:hover,.day-box4:hover,.day-box5:hover{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  color: white;
+}
+.day-date1,.day-date2,.day-date3,.day-date4,.day-date5{
+  text-transform: capitalize;
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black
+}
+
+.day-temp{
+  width: 100%;
+  display: flex;
+  position: relative;
+
+}
+.day-temp #temp-day1,#temp-day2,#temp-day3,#temp-day4,#temp-day5{
+  font-size: 30px;
+  color: orangered;
+}
+.day-temp #temp-night1,#temp-night2,#temp-night3,#temp-night4,#temp-night5{
+  color: rgb(155, 131, 131);
+  font-size: 23px;
+  font-weight: bold;
+  position: absolute;
+  right: 35%;
+  bottom: 7%;
+}
+.day-description1,.day-description2,.day-description3,.day-description4,.day-description5{
+
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.hour-case{
+  margin: 2% 0 0 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hourly-container1,.hourly-container2,.hourly-container3,.hourly-container4,.hourly-container5{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#hour-box{
+  display:flex; 
+  width:150px; 
+  flex-direction:column; 
+  justify-content: center;
+  align-items:center; 
+  padding: 10px 0 30px 0;
+  color: black;
+  
+}
+#hour-box p{
+  text-transform: capitalize;
+}
+#hour-box img{
+  filter: drop-shadow(0 0 0.75rem black);
+}
+.day-details-container{
+  margin: 10% 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.day-details-case{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sun-details{
+  display: flex;
+  justify-content: space-between;
+}
+.sun-details .sunrise,.sunset{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1%;
+}
+.sun-details h1{
+  text-align: center;
+}
+.sun-details .sunrise img,.sunset img{
+  width: 100px;
+}
+.other-info{
+  display: flex;
+  flex-direction: column;
+}
+.humidity{
+  display: flex;
+  flex-direction: column;
+}
+.uv-index{
+  display: flex;
+  flex-direction: column;
+
+}
+.uv-index #myIndex{
+  width: 100%; 
+}
+.uv-index #myIndexBar{
+  width: 100%;
+}
+#myHumidity,#myIndex {
+  width: 100%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  
+}
+#myHumidityBar,#myIndexBar {
+  width: 1%;
+  height: 30px;
+  background-color: #195cd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wind{
+  display: flex;
+  flex-direction: column;
+  
+}
+#go-Up{
+  width: 100px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  .forecast-row{
+    justify-content: space-around;
+    align-items: center;
+  }
+  .day-box1 ,.day-box2, .day-box3, .day-box4, .day-box5{
+    border: 1px solid white;
+    margin: 20px 0;
+  }
+   .temperature-case{
+     margin: 30% 0 0 0;
+   }
+    .logo h1{
+        top: 40px;
+        right: 5px;
+        font-size: 25px;
+    }
+    .day-details-container{
+      margin: 10% 0 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .day-details-case{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .other-info{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .other-info h1{
+      text-align: center;
+    }
+    .sun-details{
+      margin: 10% 0;
+    }
+    .humidity{
+      margin: 10% 0;
+    }
+    .uv-index{
+      margin: 10% 0;
+    }
+    #go-Up{
+      width: 50px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      cursor: pointer;
+    }
+}

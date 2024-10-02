@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.goog-logo-link {
+    display:none !important;
+ } 
+ 
+ .goog-te-gadget{
+    color: transparent !important;
+ }
+/* NAV MENU---------------------------- */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+.sidenav #instagram{
+    display: flex;
+    align-items: center;
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav #instagram:hover{
+
+    color: #dc2743;
+}
+.sidenav .fa{
+   position: absolute;
+   right: 35px;
+}
+.sidenav #facebook{
+    display: flex;
+    align-items: center;
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav #facebook:hover{
+    color: rgb(40, 78, 161);
+}
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .toggle-bars{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1% 0;
+      flex-wrap: wrap;
+  }
+  .toggle-bars .fa{
+      transition: .2s;
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+      top: 25px;
+  }
+  .toggle-bars .fa:hover{
+      color: red;
+      transform: scale(1.1);
+      transition: .2s;
+    }
+    .skiptranslate.goog-te-gadget{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    /*NAV-MENU END -------------------------------------*/
+    #corona-design-top{
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        width: 150px;
+        z-index: -4;
+    }
+    #corona-bottom{
+        position: absolute;
+        bottom: 100px;
+        right: 150px;
+        width: 15%;
+        z-index: -1;
+    }
+     h1{
+        color: rgb(31, 199, 15);
+        font-size: 30px;
+
+    }
+    .corona-info{
+        width: 60%;
+        margin-top: 10%;
+        padding: 0 0 0 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .corona-info h1{
+        font-size: 150px;
+    }
+    .corona-info p{
+        padding: 0 0 0 5%;
+        font-size: 30px;
+        color: #555;
+        font-weight: bold;
+    }
+    .corona-info #p2{
+        padding: 0 0 0 2%;
+    }
+    .corona-info #p3{
+        padding: 0 0 0 4%;
+    }
+    .corona-info a{
+        margin: 2% 5%;
+        text-decoration: none;
+        width: 200px;
+    }
+    .corona-info button{
+        outline: none;
+        border: none;
+        background: rgb(122, 95, 245);
+        padding: 20px 0px;
+        color: white;
+        width: 100%;
+        cursor: pointer;
+    }
+    .read-more{
+        margin: 20% 10%;
+        width: 60%;
+    }
+    .read-more h2{
+        font-size: 40px;
+    }
+    .read-more p{
+        padding: 0 2%;
+        font-size: 25px;
+    }
+    .symptoms{
+        margin: 20% 10%;
+        width: 60%;
+    }
+    .symptoms h2{
+        font-size: 40px;
+    }
+    .symptoms p{
+        padding: 0 2%;
+        font-size: 25px;
+    }
+    .diagnosis{
+        margin: 20% 10% 5% 10%;
+        width: 60%;
+    }
+    .diagnosis h2{
+        font-size: 40px;
+    }
+    .diagnosis p{
+        padding: 0 2%;
+        font-size: 25px;
+    }
+    @media screen and (max-width:560px){
+        .toggle-bars{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .toggle-bars .fa{
+            position: absolute;
+            left: 20px;
+            top: 25px;
+        }
+        .corona-info{
+            margin: 20% 1%;
+            width: 80%;
+            
+        }
+        .corona-info p{
+            font-size: 20px;
+            padding: 0 0 20px 20px;
+        }
+        .corona-info a{
+            width: 150px;
+        }
+        #corona-bottom{
+            width: 150px;
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+        }
+        .corona-info h1{
+            font-size: 50px;
+        }
+        .read-more{
+            width: 90%;
+            padding: 0;
+            margin: 40% 5%;
+        }
+        .read-more p{
+            font-size: 20px;
+            padding: 5px 20px;
+        }
+        .diagnosis{
+            width: 90%;
+            padding: 0;
+            margin: 40% 5%;
+        }
+        .diagnosis p{
+            font-size: 20px;
+            padding: 5px 20px;
+        }
+        .symptoms{
+            width: 90%;
+            margin: 40% 5%;
+        }
+        .symptoms p{
+            font-size: 20px;
+            padding: 5px 20px;
+        }
+    }
+    
+
+   
+  

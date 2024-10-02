@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="kingdomModelStoreContainer" CdmEntityContainer="kingdomEntities">
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="kingdomModel.Language">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="LanguageName" ColumnName="LanguageName" />
+          <ScalarProperty Name="LanguageDescription" ColumnName="LanguageDescription" />
+          <ScalarProperty Name="LanguageLink" ColumnName="LanguageLink" />
+          <ScalarProperty Name="LanguageImage" ColumnName="LanguageImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="kingdomModel.Project">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectLink" ColumnName="ProjectLink" />
+          <ScalarProperty Name="ProjectImage" ColumnName="ProjectImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

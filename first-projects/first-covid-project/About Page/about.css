@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.goog-logo-link {
+    display:none !important;
+ } 
+ 
+ .goog-te-gadget{
+    color: transparent !important;
+ }
+ /*SOCIALS*/
+ .icon-bar {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .instagram{
+      background: #833AB4;
+      color: white;
+  }
+  
+  .tiktok {
+    background: #333333;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+/* NAV MENU---------------------------- */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+.sidenav #instagram{
+    display: flex;
+    align-items: center;
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav #instagram:hover{
+
+    color: #dc2743;
+}
+.sidenav .fa{
+   position: absolute;
+   right: 35px;
+}
+.sidenav #facebook{
+    display: flex;
+    align-items: center;
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav #facebook:hover{
+    color: rgb(40, 78, 161);
+}
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .toggle-bars{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1% 0;
+      flex-wrap: wrap;
+  }
+  .toggle-bars .fa{
+      transition: .2s;
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+      top: 25px;
+  }
+  .toggle-bars .fa:hover{
+      color: red;
+      transform: scale(1.1);
+      transition: .2s;
+    }
+    .skiptranslate.goog-te-gadget{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.aboutme-heading{
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1% 0 0 5%;
+}
+.aboutme-heading h1{
+    font-size: 60px;
+    color: #444;
+}
+.aboutme-heading p{
+    padding: 0 1%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+}
+.aboutme-content{
+    margin: 5% 0;
+    padding: 1% 5% 0 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutme-content img{
+    width: 450px;
+}
+.aboutme-content .aboutme-info{
+    margin: 0 10% 0 20%;
+}
+.aboutme-info h1{
+    font-size: 50px;
+    padding: 10px 0 0 20px;
+}
+.aboutme-info a{
+    color: #555;
+}
+.aboutme-info p{
+    padding: 0 6%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+}
+    /*RESPONSIVENESS*/
+    @media screen and (max-width: 1315px){
+        .aboutme-content{
+            margin: 10% 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .aboutme-content .aboutme-info{
+            
+            margin: 5%;
+        }
+    }
+    @media screen and (max-width:560px){
+        .toggle-bars{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .toggle-bars .fa{
+            position: absolute;
+            left: 20px;
+            top: 25px;
+        }
+        .aboutme-heading{
+            margin: 10% 0;
+        }
+        .aboutme-content{
+            margin: 10% 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .aboutme-content img{
+            width: 350px;
+        }
+        .aboutme-content .aboutme-info{
+            width: 90%;
+            margin: 1%;
+        }
+        .icon-bar{
+            top: 50%;
+        }
+    }

@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: row !important;
+  background-color: white !important;
+}
+.sidebar {
+  min-height: 100vh;
+  z-index: 1;
+}
+.logo {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+.logo svg {
+  font-weight: bold;
+  font-size: 25px;
+}
+.ant-layout-footer {
+  background-color: #fafafa !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  padding: 12px 50px !important;
+}
+.site-layout-content {
+  background-color: #fafafa !important;
+  border-radius: 10px;
+  padding: 50px;
+}

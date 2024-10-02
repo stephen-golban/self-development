@@ -1,0 +1,28 @@
+@import "head";
+@import "header";
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $blue-primary;
+
+  .main--inner {
+    width: 70%;
+    height: 100%;
+
+    @media (max-width: 1024px) {
+      width: 80%;
+    }
+
+    @media (max-width: 800px) {
+      width: 90%;
+    }
+  }
+}
+@import "hero";
+@import "about";
+@import "portfolio";
+@import "contact";
+@import "footer";

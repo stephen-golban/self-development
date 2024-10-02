@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="JS/current-forecast-weather.js"></script>
+        <script src="JS/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://use.fontawesome.com/7e9403285b.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thunderstorms</title>
+        <link rel="icon" href="images/thunderstorm-icon.png">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+    <div class="temperature-case">
+        <h1 id="temp-now"></h1>
+    </div>
+    <div class="location-data">
+        <p id="description"></p>
+        <img src="" alt="current-weather-icon" id="weather-icon">
+        <h1 id="location"></h1>
+        <h4 id="reload"></h4>
+    </div>
+    <div class="forecast-row">
+        <div class="day-box1 active">
+            <div class="day-date1"></div>
+            <span id="row-date1"></span>
+            <div class="day-icon">
+                <img src="" alt="forecast-icon" id="forecast-icon1">
+            </div>
+            <div class="day-temp">
+                <p id="temp-day1"></p>
+                <p id="temp-night1"></p>
+            </div>
+            <div class="day-description1"></div>
+        </div>
+        <div class="day-box2">
+            <div class="day-date2"></div>
+            <span id="row-date2"></span>
+            <div class="day-icon">
+                <img src="" alt="forecast-icon" id="forecast-icon2">
+            </div>
+            <div class="day-temp">
+                <p id="temp-day2"></p>
+                <p id="temp-night2"></p>
+            </div>
+            <div class="day-description2"></div>
+        </div>
+        <div class="day-box3">
+            <div class="day-date3"></div>
+            <span id="row-date3"></span>
+            <div class="day-icon">
+                <img src="" alt="forecast-icon" id="forecast-icon3">
+            </div>
+            <div class="day-temp">
+                <p id="temp-day3"></p>
+                <p id="temp-night3"></p>
+            </div>
+            <div class="day-description3"></div>
+        </div>
+        <div class="day-box4">
+            <div class="day-date4"></div>
+            <span id="row-date4"></span>
+            <div class="day-icon">
+                <img src="" alt="forecast-icon" id="forecast-icon4">
+            </div>
+            <div class="day-temp">
+                <p id="temp-day4"></p>
+                <p id="temp-night4"></p>
+            </div>
+            <div class="day-description4"></div>
+        </div>
+        <div class="day-box5">
+            <div class="day-date5"></div>
+            <span id="row-date5"></span>
+            <div class="day-icon">
+                <img src="" alt="forecast-icon" id="forecast-icon5">
+            </div>
+            <div class="day-temp">
+                <p id="temp-day5"></p>
+                <p id="temp-night5"></p>
+            </div>
+            <div class="day-description5"></div>
+        </div>
+    </div>
+    <!---HOURLY FORECAST----------------------------------->
+    <div class="hour-case">
+        <h1>Prognoză pe ore</h1>
+        <div class="hourly-container1">
+            
+        </div>
+        <div class="hourly-container2" style="display: none;">
+            
+        </div>
+        <div class="hourly-container3" style="display: none;">
+            
+        </div>
+        <div class="hourly-container4" style="display: none;">
+            
+        </div>
+        <div class="hourly-container5" style="display: none;">
+            
+        </div>
+    </div>
+    <div class="day-details-container">
+        <div class="day-details-case">
+            <!---SUN DETAILS DIV-->
+            <div class="sun-details">
+                <div class="sunrise">
+                    <h1>Răsăritul Soarelui</h1>
+                    <img src="https://img.icons8.com/cotton/2x/sunrise--v1.png" alt="sunrise icon">
+                    <span id="sunrise"></span>
+                </div>
+                <div class="sunset">
+                    <h1>Apusul Soarelui</h1>
+                    <img src="https://www.pngrepo.com/download/40154/sunset.png" alt="sunset icon">
+                    <span id="sunset"></span>
+                </div>
+            </div>
+            <!---Other Day INFO-->
+            <div class="other-info">
+                <div class="humidity">
+                    <h1>Umiditate</h1>
+                    <div id="myHumidity">
+                        <div id="myHumidityBar"><span id="humidity-number" ></span></div>
+                    </div>
+                </div>
+                <div class="uv-index">
+                    <h1> Indexul Ultra Violet</h1>
+                    <div id="myIndex">
+                        <div id="myIndexBar"><span id="index-number"></span></div>
+                    </div>
+                </div>
+                <div class="wind">
+                    <h1>Vânt  </h1>
+                    <img src="images/wind-speed.gif" alt="wind image" width="100px">
+                    <h2 id="wind-speed"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p style="text-align: center;">Copyright by &copy; Golban Stefan,  <a href="https://ncov19.netlify.app" target="_blank" style="color: red; font-size: 20px;">Coronavirus Live tracker by Golban Stefan</a></p>
+    </footer>
+    <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png" alt="arrow up" id="go-Up">
+   
+ 
+</body>
+</html>

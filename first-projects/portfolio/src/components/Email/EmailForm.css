@@ -1,0 +1,140 @@
+.email__form {
+  position: absolute;
+  width: 900px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 2;
+}
+.email__form > .first__row > .MuiTypography-root {
+  text-align: center;
+  color: #3f51b5;
+}
+.email__form > .first__row {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.email__form > form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.email__form > form > div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 500px;
+  margin-top: 10px;
+}
+.email__form > form > div > div > div > svg {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #3f51b5;
+}
+.email__form > form > div > div > div > div > div {
+  width: 400px;
+}
+.email__form > form > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.email__form > form > div > div > button {
+  padding: 10px;
+  width: 200px;
+  margin-top: 30px;
+}
+.email__form > .first__row > .MuiSvgIcon-root {
+  position: absolute;
+  left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #3f51b5;
+  transition: all 0.4s;
+}
+.email__formActive {
+  animation: slideDown 1s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.email__formInactive {
+  animation: slideUp 1s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .email__form {
+    max-width: 400px;
+    min-width: 300px;
+    width: 300px;
+    padding: 30px 20px 40px 20px;
+    height: auto;
+    margin: auto;
+  }
+  .MuiPaper-rounded {
+    border-radius: 7px !important;
+  }
+  .email__form > form {
+    margin-top: 0;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .email__form > form > div {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .email__form > form > div > div {
+    width: 100%;
+  }
+  .email__form > form > div > div > div {
+    width: 100%;
+  }
+  .email__form > form > div > div > div > div {
+    width: 100%;
+  }
+  .email__form > form > div > div > div > div > div {
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .email__form > .first__row {
+    margin: 0;
+    padding: 0;
+  }
+  .email__form > .first__row > .MuiTypography-root {
+    font-size: 28px;
+  }
+  .email__form > form > div > div > button {
+    width: 100%;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  .email__form > form > div > div > div > svg {
+    display: none;
+  }
+}

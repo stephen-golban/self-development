@@ -1,0 +1,23 @@
+.thanks {
+    padding: 40px 30px;
+    width: 600px;
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thanks > a {
+    text-decoration: none;
+}
+.thanks > .thanks__text{
+    text-align: center;
+    margin: 10px 0;
+    color: gray;
+}
+.success {
+    font-weight: bold;
+    font-size: 30px;
+    color: #3F51B5;
+}

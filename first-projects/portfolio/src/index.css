@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(194, 194, 202);
+  /* background-image: linear-gradient(-45deg,#244dc7, #6f85ff); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}

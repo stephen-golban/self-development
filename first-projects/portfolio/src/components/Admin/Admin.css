@@ -1,0 +1,83 @@
+
+.login > .MuiPaper-root{
+    width: 600px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorHead {
+    position: absolute;
+    top: 20px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: #912d2b;
+    background-color: #fff6f6;
+}
+.error{
+    color: #d9534f;
+}
+.login > .MuiPaper-root > form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.login > .MuiPaper-root > form > .first__row {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.login > .MuiPaper-root > form > .first__row > a {
+    position: absolute;
+    left: 0;
+    color: #3F51B5;
+}
+.login > .MuiPaper-root >  form > .first__row > a > .MuiSvgIcon-root{
+    transition: transform .2s;
+
+}
+.login > .MuiPaper-root > form > .first__row > a > .MuiSvgIcon-root:hover {
+    transform: scale(1.4);
+}
+.login > .MuiPaper-root > form > .first__row > h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #3F51B5;
+}
+.login > .MuiPaper-root > form > .form__row{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 630px) {
+    .login {
+        width: 95%;
+        height: auto;
+    }
+    .login > .MuiPaper-root{
+        width: 100%;
+        height: 100%;
+    }
+    .login > .MuiPaper-root > form {
+        padding: 20px;
+        width: 100%;
+    }
+    .login > .MuiPaper-root > form > .first__row > h1{
+        font-size: 20px;
+    }
+    .login > div > form > div > div {
+        width: 100% !important;
+    }
+    .MuiInputBase-input {
+        padding: 0;
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+    .login > .MuiPaper-root > form > .form__row > p {
+        font-size: 12px;
+    }
+}

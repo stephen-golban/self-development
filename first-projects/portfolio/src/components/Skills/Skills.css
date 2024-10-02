@@ -1,0 +1,36 @@
+.MuiChip-root {
+    margin: 5px;
+}
+.skills > .first__row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.MuiFormControlLabel-root {
+    margin-left: 5px !important;
+}
+#scrollable-auto-tabpanel-2 > div {
+    width: 100%;
+    height: 500px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+#scrollable-auto-tabpanel-2 > div > div > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#scrollable-auto-tabpanel-2 > div > div > div > div > div {
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+}
+@media screen and (max-width:630px) {
+    #scrollable-auto-tabpanel-2 > div > div > div > div > div{
+        font-size: 20px;
+        padding: 10px 15px;
+        height: 30px;
+    }
+}

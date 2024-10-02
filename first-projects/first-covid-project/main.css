@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    transition: background-color .5s;
+}
+
+.goog-logo-link {
+    display:none !important;
+ } 
+ 
+ .goog-te-gadget{
+    color: transparent !important;
+ }
+ #map{
+    max-width: 100%;
+    height: 500px;
+}
+/* NAV MENU---------------------------- */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+  }
+  .sidenav #visitors{
+      position: absolute;
+      bottom: 0;
+      color: transparent;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav:hover .closebtn {
+    top: 35px;
+    transition: .4s;
+    
+  }
+.sidenav #instagram{
+    display: flex;
+    align-items: center;
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav #instagram:hover{
+
+    color: #dc2743;
+}
+.sidenav .fa{
+   position: absolute;
+   right: 15px;
+}
+.sidenav #facebook{
+    display: flex;
+    align-items: center;
+    color: #818181;
+    text-decoration: none;
+}
+.sidenav #facebook:hover{
+    color: rgb(40, 78, 161);
+}
+.sidenav .skiptranslate.goog-te-gadget{
+    position: absolute;
+    right: 10px;
+
+}
+
+  .mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .toggle-bars{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1% 0;
+  }
+  .toggle-bars #back-shadow{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #eee;
+      position: absolute;
+      z-index: -2;
+      left: 18px;
+      display: none;
+      transition: .2s;
+  }
+  
+  .toggle-bars .fa{
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      left: 30px;
+      transition: .2s;
+      color: #333333;
+  }
+  .toggle-bars .fa:hover+#back-shadow{
+      display: block;
+      transition: .2s;
+  }
+  .toggle-bars .fa:hover{
+      transition: .2s;
+    }
+    .black-container{
+        width: 0;
+        transition: all .5s ease-in;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        display: none;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        position: fixed;
+    }
+    .open-black-container{
+        width: 100%;
+        display: block;
+        transition: width .5s;
+    }
+    /*NAV-MENU END -------------------------------------*/
+.search-case{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+    
+}
+.search-case #input-value {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+    outline: none;
+  }
+  
+  .search-case #button {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .search-case #button:hover {
+    background: #0b7dda;
+  }
+  
+  .search-case::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+#headeer{
+    text-align: center;
+}
+    /* Create an active/current tablink class */
+    
+    .active{
+        background: dodgerblue;
+        color: white;
+    }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    justify-content: space-around;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  #Worldwide{
+      display: flex;
+      flex-direction: row;
+  }
+  #Worldwide p{
+      color: gray;
+  }
+  #Worldwide h2{
+      color: black;
+      font-weight: 300;
+  }
+.latest-news{
+    padding: 1% 0 5% 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+.latest-news .news-box{
+    width: calc(100%/8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px ;
+    text-align: center;
+}
+.latest-news a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+.news-box img{
+    width: 100%;
+    height: 120px;
+}
+.news-box:hover img{
+    opacity: .7;
+    transition: .3s;
+}
+.part{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+    border-right: 1px solid gray;
+    justify-content: center;
+    align-items: flex-start;
+}
+.part h2{
+    padding: 2% 0;
+    font-size: 1vw;
+}
+
+.part:nth-child(8){
+    border-right: none;
+}
+
+.country-virus-info{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+.corona-country-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.corona-country-info .info-box-country{
+    display: flex;
+    align-items: center;
+}
+.corona-country-info .info-box-country img{
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .9);
+}
+.country-virus-info .info-box h3{
+    margin: 0 0 0 20px;
+}
+.country-population{
+    display: flex;
+    align-items: center;
+}
+.country-population p{
+    font-size: 30px;
+}
+.country-population h2{
+    margin: 0 0 0 20px;
+
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+    .toggle-bars .fa{
+        position: absolute;
+        left: 15px;
+    }
+    .toggle-bars #back-shadow{
+        display: none;
+    }
+    .toggle-bars #new-feature{
+        position: absolute;
+        top: 0;
+        left: 30px;
+        z-index: -1;
+    }
+    .latest-news{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .latest-news .news-box{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px ;
+        text-align: center;
+    }
+    .latest-news a{
+        text-decoration: none;
+        color: black;
+    }
+    .news-box img{
+        width: 100%;
+        height: 200px;
+    }
+    .news-box:hover img{
+        opacity: .7;
+    }
+    .search-case #input-value {
+        padding: 10px;
+        font-size: 17px;
+        border: none;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        outline: none;
+      }
+      #Worldwide{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          
+      }
+      .part{
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: none;
+      }
+      .part p{
+          font-size: 20px;
+      }
+      .part h2{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 768px){
+    .country-virus-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .corona-country-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .part{
+        margin: 1% 3%;
+    }
+    .toggle-bars .fa{
+        position: absolute;
+        left: 15px;
+    }
+    .toggle-bars #back-shadow{
+        display: none;
+    }
+    .toggle-bars #new-feature{
+        position: absolute;
+        top: 0;
+        left: 30px;
+        z-index: -1;
+    }
+    .latest-news{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .latest-news .news-box{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px ;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 580px){
+    #Worldwide{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .part{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+    .part p{
+        font-size: 20px;
+    }
+    .part h2{
+      font-size: 25px;
+  }
+  #Worldwide{
+      padding: 0 0 5% 0;
+  }
+    .country-virus-info{
+        display: none;
+        position: relative;
+    }
+    .corona-country-info{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    .info-box1{
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .info-box1 h3{
+        position: absolute;
+        right: 10px;  
+    }
+    .info-box{
+        display: flex;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .info-box-country{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .info-box-country #flag{
+        width: 50px;
+    }
+    .info-box h3{
+        position: absolute;
+        right: 10px;  
+    }
+    .country-population{
+        position: absolute;
+        top: 40px;
+    }
+   .latest-news{
+    font-size: 20px;
+    }
+    .latest-news h1{
+        font-size: 20px;
+    }
+    iframe{
+        height: 350px;
+    }
+    .tab{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .tab button{
+        width: 100%;
+    }
+    .toggle-bars {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .toggle-bars .fa{
+        position: absolute;
+        left: 5px;
+    }
+    .toggle-bars h1{
+        font-size: 15px;
+    }
+    #map{
+        width: 100vw;
+        height: 100vw;
+    }
+    .toggle-bars #new-feature{
+        position: absolute;
+        top: 0;
+        left: 25px;
+        z-index: -1;
+    }
+    .toggle-bars #back-shadow{
+        display: none;
+    }
+    .latest-news{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .latest-news .news-box{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px ;
+        text-align: center;
+    }
+    .latest-news a{
+        text-decoration: none;
+        color: black;
+    }
+    .latest-news.news-box img{
+        width: 100%;
+        height: 160px;
+    }
+
+    
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+@media screen and (max-width:300px){
+    .info-box-country{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-box1{
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .info-box1 h3{
+        position: absolute;
+        right: 10px;  
+    }
+    .info-box{
+        display: flex;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .info-box h3{
+        position: absolute;
+        right: 10px;  
+    }
+    .country-population{
+        position: absolute;
+        top: 670px;
+    }
+    .tab{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .tab button{
+        width: 100%;
+    }
+    .tabcontent{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .toggle-bars #back-shadow{
+        display: none;
+    }
+    .news-box img{
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
