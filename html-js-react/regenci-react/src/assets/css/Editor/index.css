@@ -1,0 +1,103 @@
+.editor .editor__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.editor .editor__nav .go__back {
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.editor .editor__nav .go__back:hover {
+  opacity: 1;
+}
+
+.editor .editor__nav button {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0.8;
+}
+
+.editor .editor__nav button:hover {
+  opacity: 1;
+}
+
+.editor .editor__sidebar {
+  width: 450px;
+  overflow-y: scroll;
+  border-right: 1px solid gray;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.editor .editor__sidebar .template {
+  width: 150px;
+  height: 250px;
+  max-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.editor .editor__sidebar .template:hover img {
+  border: 2px solid dodgerblue;
+}
+
+.editor .editor__sidebar .template .template__name {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.editor .editor__sidebar .template img {
+  border: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+  height: 200px;
+  -webkit-box-shadow: 0 3px 5px 0 gray;
+          box-shadow: 0 3px 5px 0 gray;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=index.css.map */

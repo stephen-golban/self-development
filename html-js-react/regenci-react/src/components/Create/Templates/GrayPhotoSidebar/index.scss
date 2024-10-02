@@ -1,0 +1,329 @@
+.template__cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a8599;
+}
+.template {
+  display: flex;
+  width: 650px;
+  height: 850px;
+  @media screen and (max-height: 900px) {
+    height: 750px;
+    width: 650px;
+  }
+  .sidebar {
+    border-top-left-radius: 10px;
+    min-width: 180px;
+    max-width: 180px;
+    background-color: #9fa7b4;
+    border-bottom-left-radius: 10px;
+    .top {
+      border-top-left-radius: 10px;
+      padding: 20px 10px;
+      background-color: rgba(50, 58, 69, 255);
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .photo {
+        width: 100px;
+        height: 100px;
+        @media screen and (max-height: 900px) {
+          height: 80px;
+          width: 80px;
+        }
+        img {
+          width: 100%;
+          min-height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .user__name,
+      .user__job,
+      .user__website {
+        width: 100%;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .user__name {
+        margin-top: 5px;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+        @media screen and (max-height: 900px) {
+          font-size: 13px;
+        }
+      }
+      .user__job {
+        color: white;
+        font-size: 13px;
+        @media screen and (max-height: 900px) {
+          font-size: 10px;
+        }
+      }
+      .user__website {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #9fa7b4;
+        @media screen and (max-height: 900px) {
+          font-size: 10px;
+        }
+        svg {
+          margin-right: 5px;
+          transform: rotate(45deg);
+        }
+        a {
+          color: #9fa7b4;
+          text-decoration: none;
+          margin: 2px 3px;
+        }
+      }
+    }
+    .bottom {
+      padding: 20px 15px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .user__summary {
+        font-size: 12px;
+        color: #5b6370;
+        word-wrap: break-word;
+        width: 100%;
+        @media screen and (max-height: 900px) {
+          font-size: 11px;
+        }
+        span {
+          svg {
+            margin-right: 5px;
+          }
+          width: 100%;
+          color: #404348;
+          margin-right: 5px;
+        }
+        .elements {
+          @media screen and (max-height: 900px) {
+            font-size: 10px !important;
+          }
+          margin-left: 5px;
+        }
+      }
+      .bottom__bottom {
+        width: 100%;
+        margin-top: 20px;
+        .user__phone,
+        .user__email,
+        .user__hobbies,
+        .user__extras {
+          color: #5b6370;
+          width: 100%;
+          word-wrap: break-word;
+          font-size: 13px;
+          @media screen and (max-height: 900px) {
+            font-size: 11px;
+          }
+          span {
+            width: 100%;
+            margin-right: 5px;
+            color: #404348;
+            svg {
+              margin-right: 5px;
+            }
+          }
+          .elements {
+            font-size: 12px;
+            @media screen and (max-height: 900px) {
+              font-size: 10px;
+            }
+          }
+        }
+        .user__email {
+          margin-top: 5px;
+        }
+        .user__hobbies,
+        .user__extras {
+          margin-top: 10px;
+          .elements {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 10px;
+            .hobby,
+            .extra {
+              background-color: #5b6370;
+              color: #fff;
+              border-radius: 5px;
+              word-wrap: break-all;
+              @media screen and (max-height: 900px) {
+                font-size: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main {
+    flex: 1;
+    padding: 20px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+
+    .user__activity {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+      @media screen and (max-height: 900px) {
+        margin: 2px 0;
+      }
+      .headline {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .icon__container {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: #404348;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg {
+            color: white;
+            font-size: 12px;
+          }
+        }
+        h1 {
+          flex: 1;
+          margin-left: 10px;
+          border-bottom: 1px solid #404348;
+          color: #404348;
+          font-size: 17px;
+          @media screen and (max-height: 900px) {
+            font-size: 15px;
+          }
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+        .post__headline {
+          color: #404348;
+          font-weight: bold;
+          margin-top: 2px;
+          font-size: 12px;
+          background-color: #e6e6e6;
+          padding: 2px 5px;
+          display: flex;
+          flex-wrap: wrap;
+          @media screen and (max-height: 900px) {
+            font-size: 10px;
+          }
+        }
+        .last__headline {
+          color: #404348;
+          padding: 2px 5px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+          font-size: 11px;
+          @media screen and (max-height: 900px) {
+            font-size: 10px;
+          }
+        }
+        .fragment__description {
+          color: #404348;
+          padding: 2px 5px;
+          margin-top: 2px;
+          word-wrap: break-word;
+          width: 100%;
+          font-size: 11px;
+          @media screen and (max-height: 900px) {
+            font-size: 10px;
+          }
+        }
+      }
+      .activity__content {
+        padding: 5px 5px 5px 35px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .skills {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          max-height: 150px;
+          @media screen and (max-height: 900px) {
+            max-height: 135px;
+          }
+          .skill {
+            padding: 0;
+            font-size: 12px;
+            @media screen and (max-height: 900px) {
+              font-size: 10px;
+            }
+          }
+        }
+        .languages__container {
+          max-width: 200px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            font-size: 15px;
+          }
+          .languages {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .language {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 2px 4px;
+              max-width: 50px;
+              min-width: 50px;
+              @media screen and (max-height: 900px) {
+                min-width: 35px;
+                max-width: 35px;
+                margin: 1px;
+              }
+              .actual__language {
+                word-wrap: break-word;
+                font-size: 10px;
+                width: 100%;
+                text-align: center;
+                @media screen and (max-height: 900px) {
+                  font-size: 9px;
+                }
+              }
+              .level__container {
+                transform: rotate(180deg);
+                width: 5px;
+                background-color: #c0bec0;
+                height: 40px;
+                @media screen and (max-height: 900px) {
+                  height: 30px;
+                  width: 4px;
+                }
+                .language__level {
+                  width: 100%;
+                  background-color: #323a46;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

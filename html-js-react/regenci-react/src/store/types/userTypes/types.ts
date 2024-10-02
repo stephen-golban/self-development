@@ -1,0 +1,5 @@
+export const FETCH_ALL_USERS = "FETCH_ALL_USERS";
+export const FETCH_USER = "FETCH_USER";
+export const UPDATE_USER = "UPDATE_USER";
+export const UPDATE_USER_RESUME = "UPDATE_USER_RESUME";
+export const SET_USER_TEMPLATES = "SET_USER_TEMPLATES";

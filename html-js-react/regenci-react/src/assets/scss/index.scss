@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .main__layout {
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+    @import "authentication";
+    @import "hero";
+    @import "sidebar";
+    @import "templates";
+    @import "faq";
+    @import "globals";
+  }
+}
+@import "loader";

@@ -1,0 +1,83 @@
+.actual__hero {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: #000;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .hero__sphere {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .hero__content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 5%;
+    transform: translate(5%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    @media screen and (max-width: 768px) {
+      padding: 10px 0;
+      width: 300px;
+      // min-height: 100%;
+    }
+    @media screen and (max-width: 500px) {
+      top: 80%;
+      transform: translate(5%,-80%);
+    }
+    @media screen and (max-width: 380px) {
+      width: 100%;
+      left: 0;
+      transform: translate(0,-80%);
+      padding: 10px;
+    }
+    
+    .text {
+      width: 100%;
+      position: relative;
+      @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      em {
+        font-size: 20px;
+        line-height: 1.2;
+        position: absolute;
+        top: 140px;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          position: unset;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 14px;
+        }
+      }
+      h1 {
+        font-size: 80px;
+        color: white;
+        @media screen and (max-width: 1000px) {
+          font-size: 70px;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 40px;
+        }
+      }
+    }
+    .button__wrapper {
+      margin-top: 60px;
+      @media screen and (max-width: 500px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

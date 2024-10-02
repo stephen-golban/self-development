@@ -1,0 +1,85 @@
+.actual__auth {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .auth {
+    width: 500px;
+    @media screen and (max-width: 550px) {
+      width: 100%;
+      margin: 0 10px;
+      padding: 0 10px;
+    }
+    form {
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
+      width: 500px;
+      color: #aeaeae;
+      .submit__button {
+        color: white;
+        border: none;
+        background-color: black;
+        &:hover {
+          box-shadow: 0 2px 4px black;
+        }
+      }
+      .ant-input-affix-wrapper {
+        &:hover {
+          border: 1px solid black;
+        }
+      }
+      .ant-input-affix-wrapper:focus,
+      .ant-input-affix-wrapper-focused {
+        border-color: black !important;
+        box-shadow: unset !important;
+      }
+      .forget {
+        color: black;
+        transition: all 0.4s;
+        &:hover {
+          letter-spacing: 0.5px;
+        }
+      }
+      .question {
+        color: black;
+      }
+      .ant-btn-dashed {
+        &:hover,
+        &:focus {
+          color: black;
+          border-color: black;
+        }
+      }
+    }
+    h2 {
+      @media screen and (max-width: 550px) {
+        margin: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        padding: 0;
+      }
+    }
+    .social-signs {
+      .ant-btn:focus,.ant-btn:active,.ant-btn:hover {
+        box-shadow: unset !important;
+        border-color: black !important;
+        color: black;
+      }
+      @media screen and (max-width: 550px) {
+        width: 100%;
+        margin: 0.3em 0;
+      }
+    }
+  }
+  .w-500px {
+    @media screen and (max-width: 550px) {
+      width: 100%;
+      margin: 0 10px;
+      padding: 0 10px;
+    }
+  }
+}
